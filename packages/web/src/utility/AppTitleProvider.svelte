@@ -3,7 +3,7 @@
   import getElectron from './getElectron';
   import _ from 'lodash';
 
-  $: title = _.compact([$activeTab?.title, $currentDatabase?.name, 'DbGate']).join(' - ');
+  $: title = _.compact([$activeTab?.title, $currentDatabase?.name, 'Superinsight SQL Editor']).join(' - ');
 
   $: {
     const electron = getElectron();

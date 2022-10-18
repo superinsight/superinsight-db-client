@@ -8,7 +8,7 @@
   import { isMac } from '../utility/common';
   import getElectron from '../utility/getElectron';
 
-  $: title = _.compact([$activeTab?.title, $currentDatabase?.name, 'DbGate']).join(' - ');
+  $: title = _.compact([$activeTab?.title, $currentDatabase?.name, 'Superinsight SQL Editor']).join(' - ');
   const electron = getElectron();
 </script>
 

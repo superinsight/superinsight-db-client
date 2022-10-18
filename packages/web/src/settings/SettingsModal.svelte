@@ -112,7 +112,7 @@ ORDER BY
             disabled={values['connection.autoRefresh'] === false}
           />
 
-          <div class="heading">SQL editor</div>
+          <div class="heading">Superinsight SQL Editor</div>
           <FormSelectField
             label="SQL commands case"
             name="sqlEditor.sqlCommandsCase"

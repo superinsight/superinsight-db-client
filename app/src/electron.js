@@ -258,7 +258,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
-    title: 'DbGate',
+    title: 'Superinsight SQL Editor',
     frame: useNativeMenu,
     titleBarStyle: useNativeMenu ? undefined : 'hidden',
     ...bounds,
