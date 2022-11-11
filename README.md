@@ -196,5 +196,5 @@ docker push superinsight/superinsight-db-client:x.x.x
 
 ### Run with Docker
 ```
-docker run -p 5001:5001 -d --name superinsight-db-client superinsight/superinsight-db-client:latest
+docker run -p 3000:3000 -d --name superinsight-db-client superinsight/superinsight-db-client:latest
 ```
