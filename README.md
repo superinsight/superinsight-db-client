@@ -19,6 +19,7 @@ DbGate is licensed under MIT license and is completely free.
 * Run web version as [NPM package](https://www.npmjs.com/package/dbgate-serve) or as [docker image](https://hub.docker.com/r/dbgate/dbgate)
 
 ## Supported databases
+* Superinsight
 * MySQL
 * PostgreSQL
 * SQL Server
@@ -175,3 +176,25 @@ yarn plugin # this compiles plugin and copies it into existing DbGate installati
 ```
 
 After restarting DbGate, you could use your new plugin from DbGate.
+
+
+## Docker Images
+
+### Build Docker Image [See YAML](.github/workflows/build-docker.yaml)
+```
+yarn install
+yarn setCurrentVersion
+yarn run prepare:docker
+docker build  -t superinsight/superinsight-db-client:latest ./docker
+```
+
+### Tag Docker Image
+```
+docker tag superinsight/superinsight-db-client:latest superinsight/superinsight-db-client:x.x.x
+docker push superinsight/superinsight-db-client:x.x.x
+```
+
+### Run with Docker
+```
+docker run -p 5001:5001 -d --name superinsight-db-client superinsight/superinsight-db-client:latest
+```
